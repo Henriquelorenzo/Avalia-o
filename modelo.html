@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+/* Style the header */
+.header {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.imagem{
+height: 235px;
+width: 400px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>PORTAL GEEK</h1>
+  <p>Seu portal de notícias diárias.</p>
+</div>
+
+<div class="topnav">
+  <a href="../Teste 2/index.form.html">Faça seu cadastro!</a>
+  <a href="../Teste 2/index.tab.html">Acesse nossa página de jogos também!</a>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <h2>She-Hulk chega ao Disney+</h2>
+    <img class="imagem" src="../Projeto/hulk.jpg">
+    <p>A mais nova série da Marvel She-Hulk acaba de estreiar no Disney+ e viemos trazer nossa opinião sobre o mais novo lançamento que promete trazer algumas mudanças significativas no futuro do UCM.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Cavaleiro da Lua tem segunda temporada confirmada?</h2>
+    <img class="imagem" src="../Projeto/cavaleiro.jpg">
+    <p>Recentemente um video do ator principal da série, Oscar Isaac, e o diretor Mohamed Diab causou curiosidade nos fãs de Cavaleiro da Lua. No vídeo eles sugerem que a série irá retornar para uma segunda temporada. Vamos analisar qual a real probabilidade disso acontecer!</p>
+  </div>
+  
+  <div class="column">
+    <h2>Homem Aranha: Sem Volta Para Casa com cenas extras?</h2>
+    <img class="imagem" src="../Projeto/homem.webp">
+    <p>Hoje a Marvel através de seu perfil no Instagram divulgou um novo poster para promover o relançamento de "Homem Aranha: Sem Volta Para Casa", mas dessa vez com conteúdo extras. O que podemos esperar dessas cenas extras?</p>
+  </div>
+</div>
+
+</body>
+</html>
+
